@@ -86,6 +86,7 @@ namespace lab11 {
 			this->button2->TabIndex = 10;
 			this->button2->Text = L"Подключиться";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &conn1::button2_Click);
 			// 
 			// textBox9
 			// 
@@ -151,5 +152,10 @@ namespace lab11 {
 			parentForm = parent;
 		}
 		private: Form1^ parentForm;
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+
+
+
+	}
+};
 }
